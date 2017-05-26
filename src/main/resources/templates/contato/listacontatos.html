@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<Html  xmlns: th = " http://www.thymeleaf.org " >
+<Head >
+<Meta  http-equiv = " Conteúdo-Tipo "  content = " text / html; charset = UTF-8 " />
+<Título > ListaVIP </title >
+<Link  href = " bootstrap / css / bootstrap.min.css "  rel = " stylesheet " />
+</Head >
+<Body >
+
+	<Div  class = " container " >
+
+		<Div  id = " listaDeConvidados " >
+			<Table  class = " table table-hover " >
+				<Thead >
+					<Tr>
+						<Th > Nome </th >
+						<Th > E - mail </th >
+						<Th > Nome </th >
+					</Tr >
+				</Thead >
+				<Tr  th: each = " convidado: $ {convidados} " >
+					<Td > < span  th: text = " $ {convidado.nome} " > </span > </td >
+					<Td > < span  th: text = " $ {convidado.email} " > </span > </td >
+					<Td > < span  th: text = " $ {convidado.telefone} " > </span > </td >
+				</Tr >
+
+			</Table >
+		</Div >
+
+	</Div >
+
+	<Script
+		src = " https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js " > </script de >
+	<Script  src = " bootstrap / js / bootstrap.min.js " > </script >
+
+</Body >
+</Html >

@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+.btn-glyphicon {
+    Estofamento : 8 px ;
+    Background : #ffffff ;
+    Margem direita : 4 px ;
+}
+.icon-btn {
+    Estofamento : 1 px  15 px  3 px  2 px ;
+    Limite-raio : 50 px ;
+}

@@ -1,0 +1,53 @@
+<! DOCTYPE html>
+
+<Html  xmlns: th = " http://www.thymeleaf.org " >	
+<Meta  http-equiv = " Conteúdo-Tipo "  content = " text / html; charset = UTF-8 " />
+<Meta  name = " viewport "  content = " largura = dispositivo-largura " />
+
+<Head >
+<Title > Inserir título aqui </title >
+<Meta  http-equiv = " Conteúdo-Tipo "  content = " text / html; charset = UTF-8 " />
+
+<! - Últimos compilados e minified CSS ->
+
+<Script  src = " /webjars/jquery/3.1.1/jquery.min.js " > </script >
+<Script  src = " /webjars/bootstrap/3.3.7-1/js/bootstrap.min.js " > </script >
+
+<! - Tema opcional ->
+<Link  rel = " stylesheet " href = " /webjars/bootstrap/3.3.7-1/css/bootstrap.min.css " />
+</Head >
+<Body >
+
+    <Div  class = " panel panel-default " >
+        <Div  class = " painel-título " >
+            <Strong > Cadastro de Contatos </strong >
+        </Div >
+        <Div  class = " painel-corpo " >
+
+			<Form  action = " # "  th: ação = " @ {/ usuario / incluir} "  th: objeto = " $ {usuario} "  method = " post "  role = " form " >
+		               <Fieldset >
+	                   	    	<Div  class = " form-group row " >
+									<Div  class = " col-md-4 " >
+			   							<Label  for = " login " > login: </label >
+			     						<Entrada  tipo = " texto "  class = " -control formulário de entrada-sm "  nome = " login "  id = " login "  th: campo = " * {Login} "   />
+			  					   </Div >
+								 </Div >
+							    
+							    <Div  class = " form-group row " >
+								    <Div  class = " col-md-4 " >
+								   	  <Label  for = " senha " > Senha: </label >
+								     	<Input  type = " password "  class = "  formulário -controle input-sm " name = " senha "   id = " senha "  th: field = " * {Senha} "   />
+								   </Div >
+		     					</Div >
+		     					
+		     					<Button  type = " submit "  class = " btn ícone-btn btn-sucesso " >
+		     					<Span  class = " glyphicon btn-glyphicon glyphicon-mais img-circle text-success " > </ span >
+		     					Incluir
+		     					</Button >
+    </Fieldset >
+</Form >
+</Div >
+</Div >
+
+</Body >
+</Html >
